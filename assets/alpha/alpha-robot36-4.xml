@@ -1,0 +1,568 @@
+<mujoco model="robot-partial-mesh-getup-no-pelvis">
+  <default>
+    <default class="robot">
+      <default class="motor">
+        <joint />
+        <motor />
+      </default>
+      <default class="visual">
+        <geom material="visualgeom" contype="0" conaffinity="0" group="2" />
+      </default>
+      <default class="collision">
+        <geom material="collision_material" condim="3" contype="0" conaffinity="1" priority="1" group="1" solref="0.005 1" friction="1 0.01 0.01" />
+        <equality solimp="0.99 0.999 1e-05" solref="0.005 1" />
+      </default>
+    </default>
+  </default>
+
+  <compiler angle="radian" />
+
+  <asset>
+    <material name="default_material" rgba="0.7 0.7 0.7 1" />
+    <material name="collision_material" rgba="1.0 0.28 0.1 0.9" />
+    <mesh name="torso_collisions_mesh_13.obj" file="meshes/torso_collisions_mesh_13.obj" />
+    <mesh name="torso_collisions_mesh_16.obj" file="meshes/torso_collisions_mesh_16.obj" />
+    <mesh name="torso_collisions_mesh_21.obj" file="meshes/torso_collisions_mesh_21.obj" />
+    <mesh name="torso_visuals_mesh_0.obj" file="meshes/torso_visuals_mesh_0.obj" />
+    <mesh name="torso_visuals_mesh_1.obj" file="meshes/torso_visuals_mesh_1.obj" />
+    <mesh name="torso_visuals_mesh_2.obj" file="meshes/torso_visuals_mesh_2.obj" />
+    <mesh name="torso_visuals_mesh_3.obj" file="meshes/torso_visuals_mesh_3.obj" />
+    <mesh name="torso_visuals_mesh_4.obj" file="meshes/torso_visuals_mesh_4.obj" />
+    <mesh name="torso_visuals_mesh_5.obj" file="meshes/torso_visuals_mesh_5.obj" />
+    <mesh name="torso_visuals_mesh_6.obj" file="meshes/torso_visuals_mesh_6.obj" />
+    <mesh name="torso_visuals_mesh_7.obj" file="meshes/torso_visuals_mesh_7.obj" />
+    <mesh name="torso_visuals_mesh_8.obj" file="meshes/torso_visuals_mesh_8.obj" />
+    <mesh name="torso_visuals_mesh_9.obj" file="meshes/torso_visuals_mesh_9.obj" />
+    <mesh name="torso_visuals_mesh_10.obj" file="meshes/torso_visuals_mesh_10.obj" />
+    <mesh name="mesh_11.obj" file="meshes/mesh_11.obj" />
+    <mesh name="mesh_12.obj" file="meshes/mesh_12.obj" />
+    <mesh name="torso_visuals_mesh_13.obj" file="meshes/torso_visuals_mesh_13.obj" />
+    <mesh name="mesh_14.obj" file="meshes/mesh_14.obj" />
+    <mesh name="mesh_15.obj" file="meshes/mesh_15.obj" />
+    <mesh name="torso_visuals_mesh_16.obj" file="meshes/torso_visuals_mesh_16.obj" />
+    <mesh name="mesh_17.obj" file="meshes/mesh_17.obj" />
+    <mesh name="mesh_18.obj" file="meshes/mesh_18.obj" />
+    <mesh name="mesh_19.obj" file="meshes/mesh_19.obj" />
+    <mesh name="mesh_20.obj" file="meshes/mesh_20.obj" />
+    <mesh name="torso_visuals_mesh_21.obj" file="meshes/torso_visuals_mesh_21.obj" />
+    <mesh name="mesh_22.obj" file="meshes/mesh_22.obj" />
+    <mesh name="mesh_23.obj" file="meshes/mesh_23.obj" />
+    <mesh name="mesh_24.obj" file="meshes/mesh_24.obj" />
+    <mesh name="mesh_25.obj" file="meshes/mesh_25.obj" />
+    <mesh name="mesh_26.obj" file="meshes/mesh_26.obj" />
+    <mesh name="mesh_27.obj" file="meshes/mesh_27.obj" />
+    <mesh name="mesh_28.obj" file="meshes/mesh_28.obj" />
+    <mesh name="left_shoulder_visuals_mesh_0.obj" file="meshes/left_shoulder_visuals_mesh_0.obj" />
+    <mesh name="left_shoulder_visuals_mesh_1.obj" file="meshes/left_shoulder_visuals_mesh_1.obj" />
+    <mesh name="left_humerus_upper_visuals_mesh_0.obj" file="meshes/left_humerus_upper_visuals_mesh_0.obj" />
+    <mesh name="left_humerus_upper_visuals_mesh_1.obj" file="meshes/left_humerus_upper_visuals_mesh_1.obj" />
+    <mesh name="left_humerus_upper_visuals_mesh_2.obj" file="meshes/left_humerus_upper_visuals_mesh_2.obj" />
+    <mesh name="left_humerus_upper_visuals_mesh_3.obj" file="meshes/left_humerus_upper_visuals_mesh_3.obj" />
+    <mesh name="left_humerus_upper_visuals_mesh_4.obj" file="meshes/left_humerus_upper_visuals_mesh_4.obj" />
+    <mesh name="left_humerus_upper_visuals_mesh_5.obj" file="meshes/left_humerus_upper_visuals_mesh_5.obj" />
+    <mesh name="left_humerus_upper_visuals_mesh_6.obj" file="meshes/left_humerus_upper_visuals_mesh_6.obj" />
+    <mesh name="left_humerus_upper_visuals_mesh_7.obj" file="meshes/left_humerus_upper_visuals_mesh_7.obj" />
+    <mesh name="left_humerus_upper_visuals_mesh_8.obj" file="meshes/left_humerus_upper_visuals_mesh_8.obj" />
+    <mesh name="left_humerus_upper_visuals_mesh_9.obj" file="meshes/left_humerus_upper_visuals_mesh_9.obj" />
+    <mesh name="left_humerus_lower_visuals_mesh_0.obj" file="meshes/left_humerus_lower_visuals_mesh_0.obj" />
+    <mesh name="left_humerus_lower_visuals_mesh_1.obj" file="meshes/left_humerus_lower_visuals_mesh_1.obj" />
+    <mesh name="left_radius_collisions_mesh_8.obj" file="meshes/left_radius_collisions_mesh_8.obj" />
+    <mesh name="left_radius_visuals_mesh_0.obj" file="meshes/left_radius_visuals_mesh_0.obj" />
+    <mesh name="left_radius_visuals_mesh_1.obj" file="meshes/left_radius_visuals_mesh_1.obj" />
+    <mesh name="left_radius_visuals_mesh_2.obj" file="meshes/left_radius_visuals_mesh_2.obj" />
+    <mesh name="left_radius_visuals_mesh_3.obj" file="meshes/left_radius_visuals_mesh_3.obj" />
+    <mesh name="left_radius_visuals_mesh_4.obj" file="meshes/left_radius_visuals_mesh_4.obj" />
+    <mesh name="left_radius_visuals_mesh_5.obj" file="meshes/left_radius_visuals_mesh_5.obj" />
+    <mesh name="left_radius_visuals_mesh_6.obj" file="meshes/left_radius_visuals_mesh_6.obj" />
+    <mesh name="left_radius_visuals_mesh_7.obj" file="meshes/left_radius_visuals_mesh_7.obj" />
+    <mesh name="left_radius_visuals_mesh_8.obj" file="meshes/left_radius_visuals_mesh_8.obj" />
+    <mesh name="left_radius_visuals_mesh_9.obj" file="meshes/left_radius_visuals_mesh_9.obj" />
+    <mesh name="left_gripper_lower_collisions_mesh_9.obj" file="meshes/left_gripper_lower_collisions_mesh_9.obj" />
+    <mesh name="left_gripper_lower_visuals_mesh_0.obj" file="meshes/left_gripper_lower_visuals_mesh_0.obj" />
+    <mesh name="left_gripper_lower_visuals_mesh_1.obj" file="meshes/left_gripper_lower_visuals_mesh_1.obj" />
+    <mesh name="left_gripper_lower_visuals_mesh_2.obj" file="meshes/left_gripper_lower_visuals_mesh_2.obj" />
+    <mesh name="left_gripper_lower_visuals_mesh_3.obj" file="meshes/left_gripper_lower_visuals_mesh_3.obj" />
+    <mesh name="left_gripper_lower_visuals_mesh_4.obj" file="meshes/left_gripper_lower_visuals_mesh_4.obj" />
+    <mesh name="left_gripper_lower_visuals_mesh_5.obj" file="meshes/left_gripper_lower_visuals_mesh_5.obj" />
+    <mesh name="left_gripper_lower_visuals_mesh_6.obj" file="meshes/left_gripper_lower_visuals_mesh_6.obj" />
+    <mesh name="left_gripper_lower_visuals_mesh_7.obj" file="meshes/left_gripper_lower_visuals_mesh_7.obj" />
+    <mesh name="left_gripper_lower_visuals_mesh_8.obj" file="meshes/left_gripper_lower_visuals_mesh_8.obj" />
+    <mesh name="left_gripper_lower_visuals_mesh_9.obj" file="meshes/left_gripper_lower_visuals_mesh_9.obj" />
+    <mesh name="left_gripper_lower_visuals_mesh_10.obj" file="meshes/left_gripper_lower_visuals_mesh_10.obj" />
+    <mesh name="left_gripper_upper_collisions_mesh_1.obj" file="meshes/left_gripper_upper_collisions_mesh_1.obj" />
+    <mesh name="left_gripper_upper_visuals_mesh_0.obj" file="meshes/left_gripper_upper_visuals_mesh_0.obj" />
+    <mesh name="left_gripper_upper_visuals_mesh_1.obj" file="meshes/left_gripper_upper_visuals_mesh_1.obj" />
+    <mesh name="left_gripper_upper_visuals_mesh_2.obj" file="meshes/left_gripper_upper_visuals_mesh_2.obj" />
+    <mesh name="neck_visuals_mesh_0.obj" file="meshes/neck_visuals_mesh_0.obj" />
+    <mesh name="neck_visuals_mesh_1.obj" file="meshes/neck_visuals_mesh_1.obj" />
+    <mesh name="neck_visuals_mesh_2.obj" file="meshes/neck_visuals_mesh_2.obj" />
+    <mesh name="neck_visuals_mesh_3.obj" file="meshes/neck_visuals_mesh_3.obj" />
+    <mesh name="neck_visuals_mesh_4.obj" file="meshes/neck_visuals_mesh_4.obj" />
+    <mesh name="neck_visuals_mesh_5.obj" file="meshes/neck_visuals_mesh_5.obj" />
+    <mesh name="neck_visuals_mesh_6.obj" file="meshes/neck_visuals_mesh_6.obj" />
+    <mesh name="neck_visuals_mesh_7.obj" file="meshes/neck_visuals_mesh_7.obj" />
+    <mesh name="head_visuals_mesh_0.obj" file="meshes/head_visuals_mesh_0.obj" />
+    <mesh name="head_visuals_mesh_1.obj" file="meshes/head_visuals_mesh_1.obj" />
+    <mesh name="head_visuals_mesh_2.obj" file="meshes/head_visuals_mesh_2.obj" />
+    <mesh name="head_visuals_mesh_3.obj" file="meshes/head_visuals_mesh_3.obj" />
+    <mesh name="head_visuals_mesh_4.obj" file="meshes/head_visuals_mesh_4.obj" />
+    <mesh name="head_visuals_mesh_5.obj" file="meshes/head_visuals_mesh_5.obj" />
+    <mesh name="head_visuals_mesh_6.obj" file="meshes/head_visuals_mesh_6.obj" />
+    <mesh name="head_visuals_mesh_7.obj" file="meshes/head_visuals_mesh_7.obj" />
+    <mesh name="head_visuals_mesh_8.obj" file="meshes/head_visuals_mesh_8.obj" />
+    <mesh name="right_shoulder_visuals_mesh_0.obj" file="meshes/right_shoulder_visuals_mesh_0.obj" />
+    <mesh name="right_shoulder_visuals_mesh_1.obj" file="meshes/right_shoulder_visuals_mesh_1.obj" />
+    <mesh name="right_shoulder_visuals_mesh_2.obj" file="meshes/right_shoulder_visuals_mesh_2.obj" />
+    <mesh name="right_humerus_upper_visuals_mesh_0.obj" file="meshes/right_humerus_upper_visuals_mesh_0.obj" />
+    <mesh name="right_humerus_upper_visuals_mesh_1.obj" file="meshes/right_humerus_upper_visuals_mesh_1.obj" />
+    <mesh name="right_humerus_upper_visuals_mesh_2.obj" file="meshes/right_humerus_upper_visuals_mesh_2.obj" />
+    <mesh name="right_humerus_upper_visuals_mesh_3.obj" file="meshes/right_humerus_upper_visuals_mesh_3.obj" />
+    <mesh name="right_humerus_upper_visuals_mesh_4.obj" file="meshes/right_humerus_upper_visuals_mesh_4.obj" />
+    <mesh name="right_humerus_upper_visuals_mesh_5.obj" file="meshes/right_humerus_upper_visuals_mesh_5.obj" />
+    <mesh name="right_humerus_upper_visuals_mesh_6.obj" file="meshes/right_humerus_upper_visuals_mesh_6.obj" />
+    <mesh name="right_humerus_upper_visuals_mesh_7.obj" file="meshes/right_humerus_upper_visuals_mesh_7.obj" />
+    <mesh name="right_humerus_upper_visuals_mesh_8.obj" file="meshes/right_humerus_upper_visuals_mesh_8.obj" />
+    <mesh name="right_humerus_upper_visuals_mesh_9.obj" file="meshes/right_humerus_upper_visuals_mesh_9.obj" />
+    <mesh name="right_humerus_lower_visuals_mesh_0.obj" file="meshes/right_humerus_lower_visuals_mesh_0.obj" />
+    <mesh name="right_humerus_lower_visuals_mesh_1.obj" file="meshes/right_humerus_lower_visuals_mesh_1.obj" />
+    <mesh name="right_radius_collisions_mesh_2.obj" file="meshes/right_radius_collisions_mesh_2.obj" />
+    <mesh name="right_radius_visuals_mesh_0.obj" file="meshes/right_radius_visuals_mesh_0.obj" />
+    <mesh name="right_radius_visuals_mesh_1.obj" file="meshes/right_radius_visuals_mesh_1.obj" />
+    <mesh name="right_radius_visuals_mesh_2.obj" file="meshes/right_radius_visuals_mesh_2.obj" />
+    <mesh name="right_radius_visuals_mesh_3.obj" file="meshes/right_radius_visuals_mesh_3.obj" />
+    <mesh name="right_radius_visuals_mesh_4.obj" file="meshes/right_radius_visuals_mesh_4.obj" />
+    <mesh name="right_radius_visuals_mesh_5.obj" file="meshes/right_radius_visuals_mesh_5.obj" />
+    <mesh name="right_radius_visuals_mesh_6.obj" file="meshes/right_radius_visuals_mesh_6.obj" />
+    <mesh name="right_radius_visuals_mesh_7.obj" file="meshes/right_radius_visuals_mesh_7.obj" />
+    <mesh name="right_radius_visuals_mesh_8.obj" file="meshes/right_radius_visuals_mesh_8.obj" />
+    <mesh name="right_radius_visuals_mesh_9.obj" file="meshes/right_radius_visuals_mesh_9.obj" />
+    <mesh name="right_gripper_lower_collisions_mesh_9.obj" file="meshes/right_gripper_lower_collisions_mesh_9.obj" />
+    <mesh name="right_gripper_lower_visuals_mesh_0.obj" file="meshes/right_gripper_lower_visuals_mesh_0.obj" />
+    <mesh name="right_gripper_lower_visuals_mesh_1.obj" file="meshes/right_gripper_lower_visuals_mesh_1.obj" />
+    <mesh name="right_gripper_lower_visuals_mesh_2.obj" file="meshes/right_gripper_lower_visuals_mesh_2.obj" />
+    <mesh name="right_gripper_lower_visuals_mesh_3.obj" file="meshes/right_gripper_lower_visuals_mesh_3.obj" />
+    <mesh name="right_gripper_lower_visuals_mesh_4.obj" file="meshes/right_gripper_lower_visuals_mesh_4.obj" />
+    <mesh name="right_gripper_lower_visuals_mesh_5.obj" file="meshes/right_gripper_lower_visuals_mesh_5.obj" />
+    <mesh name="right_gripper_lower_visuals_mesh_6.obj" file="meshes/right_gripper_lower_visuals_mesh_6.obj" />
+    <mesh name="right_gripper_lower_visuals_mesh_7.obj" file="meshes/right_gripper_lower_visuals_mesh_7.obj" />
+    <mesh name="right_gripper_lower_visuals_mesh_8.obj" file="meshes/right_gripper_lower_visuals_mesh_8.obj" />
+    <mesh name="right_gripper_lower_visuals_mesh_9.obj" file="meshes/right_gripper_lower_visuals_mesh_9.obj" />
+    <mesh name="right_gripper_lower_visuals_mesh_10.obj" file="meshes/right_gripper_lower_visuals_mesh_10.obj" />
+    <mesh name="right_gripper_upper_collisions_mesh_1.obj" file="meshes/right_gripper_upper_collisions_mesh_1.obj" />
+    <mesh name="right_gripper_upper_visuals_mesh_0.obj" file="meshes/right_gripper_upper_visuals_mesh_0.obj" />
+    <mesh name="right_gripper_upper_visuals_mesh_1.obj" file="meshes/right_gripper_upper_visuals_mesh_1.obj" />
+    <mesh name="right_gripper_upper_visuals_mesh_2.obj" file="meshes/right_gripper_upper_visuals_mesh_2.obj" />
+    <mesh name="pelvis_visuals_mesh_0.obj" file="meshes/pelvis_visuals_mesh_0.obj" />
+    <mesh name="pelvis_visuals_mesh_1.obj" file="meshes/pelvis_visuals_mesh_1.obj" />
+    <mesh name="pelvis_visuals_mesh_2.obj" file="meshes/pelvis_visuals_mesh_2.obj" />
+    <mesh name="pelvis_visuals_mesh_3.obj" file="meshes/pelvis_visuals_mesh_3.obj" />
+    <mesh name="pelvis_visuals_mesh_4.obj" file="meshes/pelvis_visuals_mesh_4.obj" />
+    <mesh name="pelvis_visuals_mesh_5.obj" file="meshes/pelvis_visuals_mesh_5.obj" />
+    <mesh name="pelvis_visuals_mesh_6.obj" file="meshes/pelvis_visuals_mesh_6.obj" />
+    <mesh name="pelvis_visuals_mesh_7.obj" file="meshes/pelvis_visuals_mesh_7.obj" />
+    <mesh name="left_hip_visuals.obj" file="meshes/left_hip_visuals.obj" />
+    <mesh name="left_femur_upper_collisions_mesh_4.obj" file="meshes/left_femur_upper_collisions_mesh_4.obj" />
+    <mesh name="left_femur_upper_visuals_mesh_0.obj" file="meshes/left_femur_upper_visuals_mesh_0.obj" />
+    <mesh name="left_femur_upper_visuals_mesh_1.obj" file="meshes/left_femur_upper_visuals_mesh_1.obj" />
+    <mesh name="left_femur_upper_visuals_mesh_2.obj" file="meshes/left_femur_upper_visuals_mesh_2.obj" />
+    <mesh name="left_femur_upper_visuals_mesh_3.obj" file="meshes/left_femur_upper_visuals_mesh_3.obj" />
+    <mesh name="left_femur_upper_visuals_mesh_4.obj" file="meshes/left_femur_upper_visuals_mesh_4.obj" />
+    <mesh name="left_femur_upper_visuals_mesh_5.obj" file="meshes/left_femur_upper_visuals_mesh_5.obj" />
+    <mesh name="left_femur_lower_visuals_mesh_0.obj" file="meshes/left_femur_lower_visuals_mesh_0.obj" />
+    <mesh name="left_femur_lower_visuals_mesh_1.obj" file="meshes/left_femur_lower_visuals_mesh_1.obj" />
+    <mesh name="left_tibia_collisions_mesh_4.obj" file="meshes/left_tibia_collisions_mesh_4.obj" />
+    <mesh name="left_tibia_visuals_mesh_0.obj" file="meshes/left_tibia_visuals_mesh_0.obj" />
+    <mesh name="left_tibia_visuals_mesh_1.obj" file="meshes/left_tibia_visuals_mesh_1.obj" />
+    <mesh name="left_tibia_visuals_mesh_2.obj" file="meshes/left_tibia_visuals_mesh_2.obj" />
+    <mesh name="left_tibia_visuals_mesh_3.obj" file="meshes/left_tibia_visuals_mesh_3.obj" />
+    <mesh name="left_tibia_visuals_mesh_4.obj" file="meshes/left_tibia_visuals_mesh_4.obj" />
+    <mesh name="left_foot_collisions_mesh_3.obj" file="meshes/left_foot_collisions_mesh_3.obj" />
+    <mesh name="left_foot_visuals_mesh_0.obj" file="meshes/left_foot_visuals_mesh_0.obj" />
+    <mesh name="left_foot_visuals_mesh_1.obj" file="meshes/left_foot_visuals_mesh_1.obj" />
+    <mesh name="left_foot_visuals_mesh_2.obj" file="meshes/left_foot_visuals_mesh_2.obj" />
+    <mesh name="left_foot_visuals_mesh_3.obj" file="meshes/left_foot_visuals_mesh_3.obj" />
+    <mesh name="right_hip_visuals.obj" file="meshes/right_hip_visuals.obj" />
+    <mesh name="right_femur_upper_collisions_mesh_1.obj" file="meshes/right_femur_upper_collisions_mesh_1.obj" />
+    <mesh name="right_femur_upper_visuals_mesh_0.obj" file="meshes/right_femur_upper_visuals_mesh_0.obj" />
+    <mesh name="right_femur_upper_visuals_mesh_1.obj" file="meshes/right_femur_upper_visuals_mesh_1.obj" />
+    <mesh name="right_femur_upper_visuals_mesh_2.obj" file="meshes/right_femur_upper_visuals_mesh_2.obj" />
+    <mesh name="right_femur_upper_visuals_mesh_3.obj" file="meshes/right_femur_upper_visuals_mesh_3.obj" />
+    <mesh name="right_femur_upper_visuals_mesh_4.obj" file="meshes/right_femur_upper_visuals_mesh_4.obj" />
+    <mesh name="right_femur_upper_visuals_mesh_5.obj" file="meshes/right_femur_upper_visuals_mesh_5.obj" />
+    <mesh name="right_femur_lower_visuals_mesh_0.obj" file="meshes/right_femur_lower_visuals_mesh_0.obj" />
+    <mesh name="right_femur_lower_visuals_mesh_1.obj" file="meshes/right_femur_lower_visuals_mesh_1.obj" />
+    <mesh name="right_tibia_collisions_mesh_4.obj" file="meshes/right_tibia_collisions_mesh_4.obj" />
+    <mesh name="right_tibia_visuals_mesh_0.obj" file="meshes/right_tibia_visuals_mesh_0.obj" />
+    <mesh name="right_tibia_visuals_mesh_1.obj" file="meshes/right_tibia_visuals_mesh_1.obj" />
+    <mesh name="right_tibia_visuals_mesh_2.obj" file="meshes/right_tibia_visuals_mesh_2.obj" />
+    <mesh name="right_tibia_visuals_mesh_3.obj" file="meshes/right_tibia_visuals_mesh_3.obj" />
+    <mesh name="right_tibia_visuals_mesh_4.obj" file="meshes/right_tibia_visuals_mesh_4.obj" />
+    <mesh name="right_foot_collisions_mesh_3.obj" file="meshes/right_foot_collisions_mesh_3.obj" />
+    <mesh name="right_foot_visuals_mesh_0.obj" file="meshes/right_foot_visuals_mesh_0.obj" />
+    <mesh name="right_foot_visuals_mesh_1.obj" file="meshes/right_foot_visuals_mesh_1.obj" />
+    <mesh name="right_foot_visuals_mesh_2.obj" file="meshes/right_foot_visuals_mesh_2.obj" />
+    <mesh name="right_foot_visuals_mesh_3.obj" file="meshes/right_foot_visuals_mesh_3.obj" />
+  </asset>
+
+  <worldbody>
+    <body name="torso" pos="0.00000000 0.00000000 0.60450001" quat="1 0 0 0" childclass="robot">
+      <freejoint name="floating_base" />
+      <geom name="alpha_v1_sim_assembly_collision_0" pos="-0.008 -0.06 0.019" quat="0.4999999883974441 0.5000001249999886 0.49999991160253976 0.49999997500000354" type="mesh" mesh="torso_collisions_mesh_13.obj" class="collision" />
+      <geom name="alpha_v1_sim_assembly_collision_1" pos="0.0005 -0.0950111 0.0190997" quat="0.5000001883974313 -0.49999992499997586 -0.4999999116025624 0.49999997499998083" type="mesh" mesh="torso_collisions_mesh_16.obj" class="collision" />
+      <geom name="alpha_v1_sim_assembly_collision_2" pos="-0.0759303 -0. 0.0649434" quat="0.4999999883974441 0.5000001249999886 0.49999991160253976 0.49999997500000354" type="mesh" mesh="torso_collisions_mesh_21.obj" class="collision" />
+      <geom name="alpha_v1_sim_assembly_visual_0" pos="0. 0. 0." quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="torso_visuals_mesh_0.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_1" pos="0. 0. 0." quat="7.679489672524422e-08 -0.999999999999997 0.0 0.0" material="default_material" type="mesh" mesh="torso_visuals_mesh_1.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_2" pos="0. -0. 0.005" quat="7.679489672524422e-08 -0.999999999999997 0.0 0.0" material="default_material" type="mesh" mesh="torso_visuals_mesh_2.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_3" pos="0. -0. 0.005" quat="7.679489672524422e-08 -0.999999999999997 0.0 0.0" material="default_material" type="mesh" mesh="torso_visuals_mesh_3.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_4" pos="0. -0. 0.2995" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="torso_visuals_mesh_4.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_5" pos="0. -0. 0.3015" quat="7.679489672524422e-08 -0.999999999999997 0.0 0.0" material="default_material" type="mesh" mesh="torso_visuals_mesh_5.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_6" pos="0. -0. 0.2965" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="torso_visuals_mesh_6.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_7" pos="-0.004 -0.062 0.1075" quat="0.7071068344890665 2.454734482348897e-08 -0.7071067278840177 -9.525802285859086e-08" material="default_material" type="mesh" mesh="torso_visuals_mesh_7.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_8" pos="-0.004 0.042 0.0355" quat="1.8249401101400053e-08 -0.7071068202715614 -1.2177705122073945e-07 0.7071067421015209" material="default_material" type="mesh" mesh="torso_visuals_mesh_8.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_9" pos="0. 0.09 0.265" quat="0.781863271140205 -0.6219221590662232 0.034136895852203156 -0.027153740919460642" material="default_material" type="mesh" mesh="torso_visuals_mesh_9.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_10" pos="0. 0.09 0.265" quat="0.781863271140205 -0.6219221590662232 0.034136895852203156 -0.027153740919460642" material="default_material" type="mesh" mesh="torso_visuals_mesh_10.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_11" pos="0.009 -0.078 0.1995" quat="0.5000000383974462 -0.49999997499999993 -0.5000000616025475 0.49999992499999485" material="default_material" type="mesh" mesh="mesh_11.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_12" pos="0.009 -0.025 0.2165" quat="0.4999999883974441 0.5000001249999886 -0.49999991160253976 -0.49999997500000354" material="default_material" type="mesh" mesh="mesh_12.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_13" pos="-0.008 -0.06 0.019" quat="0.4999999883974441 0.5000001249999886 0.49999991160253976 0.49999997500000354" material="default_material" type="mesh" mesh="torso_visuals_mesh_13.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_14" pos="-0.0693389 -0. 0.3009603" quat="-2.1542679778536566e-08 -0.8245650710852852 8.02367324689403e-08 -0.5657671283718345" material="default_material" type="mesh" mesh="mesh_14.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_15" pos="-0.0694383 0.0269575 0.301149 " quat="0.38859103402922796 -0.5749092211070251 0.5873296495980654 -0.41655765322608473" material="default_material" type="mesh" mesh="mesh_15.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_16" pos="0.0005 -0.0950111 0.0190997" quat="0.5000001883974313 -0.49999992499997586 -0.4999999116025624 0.49999997499998083" material="default_material" type="mesh" mesh="torso_visuals_mesh_16.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_17" pos="-0.0032 -0.0399142 0.0869434" quat="0.4999999883974441 0.5000001249999886 0.49999991160253976 0.49999997500000354" material="default_material" type="mesh" mesh="mesh_17.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_18" pos="-0.0817 -0.0004142 0.1515496" quat="0.4999999883974441 0.5000001249999886 0.49999991160253976 0.49999997500000354" material="default_material" type="mesh" mesh="mesh_18.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_19" pos="-0.0919 -0.0004142 0.1522248" quat="0.4999999883974441 0.5000001249999886 0.49999991160253976 0.49999997500000354" material="default_material" type="mesh" mesh="mesh_19.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_20" pos="-0.0400156 0.0625 0.2950109" quat="0.824565042796928 6.710803945953102e-08 -0.565767169600089 2.4085711603199087e-09" material="default_material" type="mesh" mesh="mesh_20.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_21" pos="-0.0759303 -0. 0.0649434" quat="0.4999999883974441 0.5000001249999886 0.49999991160253976 0.49999997500000354" material="default_material" type="mesh" mesh="torso_visuals_mesh_21.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_22" pos="-0.0694383 -0.0269575 0.301149 " quat="0.049544603086027095 -0.8211603194089281 0.034240719956244045 -0.5675109119921424" material="default_material" type="mesh" mesh="mesh_22.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_23" pos="-0.0559303 -0.0206501 0.2788047" quat="0.49999986339743097 0.5000000999999887 -0.4999999366025491 -0.5000000999999887" material="default_material" type="mesh" mesh="mesh_23.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_24" pos="-0.0087219 -0.0203291 0.2179434" quat="-1.6408485324407094e-08 0.7071067553046344 -0.7071068070684595 1.6408486525592004e-08" material="default_material" type="mesh" mesh="mesh_24.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_25" pos="-0.0400156 -0.0625 0.2950108" quat="0.824565042796928 6.710803945953102e-08 -0.565767169600089 2.4085711603199087e-09" material="default_material" type="mesh" mesh="mesh_25.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_26" pos="-0.0619303 -0.02635 0.2725465" quat="0.7071067696433402 7.93488822425914e-08 0.7071067927297459 7.934888229810255e-08" material="default_material" type="mesh" mesh="mesh_26.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_27" pos="0. -0.09 0.265" quat="0.027153680269393833 -0.03413685303969533 0.6219222397515408 -0.7818632109357754" material="default_material" type="mesh" mesh="mesh_27.obj" class="visual" />
+      <geom name="alpha_v1_sim_assembly_visual_28" pos="0. -0.09 0.265" quat="0.7818631769112963 0.6219222783134336 0.03413686085805979 0.027153766927641487" material="default_material" type="mesh" mesh="mesh_28.obj" class="visual" />
+      <body name="left_shoulder" pos="0.0004358 0.0948533 0.2661205" quat="0.02715362483935204 0.03413692574338243 0.6219220794434334 0.7818633372013489">
+        <joint name="joint_dof_l_shoulder_pitch" type="hinge" ref="0.0" class="motor" range="-2.5307271 2.5307271" axis="0. 0. 1." />
+        <inertial pos="-0.000334 -0.0069263 0.0280464" quat="1.0 0.0 0.0 0.0" mass="0.1048731" diaginertia="8.17e-05 0.0001173 9.27e-05" />
+        <geom name="left_shoulder_visual_0" pos="0. 0. 0." quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="left_shoulder_visuals_mesh_0.obj" class="visual" />
+        <geom name="left_shoulder_visual_1" pos="0. 0. 0." quat="7.679489672524422e-08 -0.999999999999997 0.0 0.0" material="default_material" type="mesh" mesh="left_shoulder_visuals_mesh_1.obj" class="visual" />
+        <body name="left_humerus_upper" pos="-0.02705 -0.018 0.055 " quat="0.3954091494415343 -0.5862180626352457 -0.39540911802622974 0.5862180626352457">
+          <joint name="joint_dof_l_shoulder_roll" type="hinge" ref="0.0" class="motor" range="-0.4101523 2.7052601" axis="0. 0. 1." />
+          <inertial pos="-0.0449732 0.0170751 -0.0262619" quat="1.0 0.0 0.0 0.0" mass="0.9145328" diaginertia="0.0021568 0.0005077 0.0021913" />
+          <geom name="left_humerus_upper_visual_0" pos="0. 0. -0." quat="0.9999999999999976 -4.999999999999992e-08 -4.999999999999992e-08 -2.4999999999999976e-15" material="default_material" type="mesh" mesh="left_humerus_upper_visuals_mesh_0.obj" class="visual" />
+          <geom name="left_humerus_upper_visual_1" pos="0. 0. -0." quat="0.994521916809094 -5.2264129635829195e-09 -4.9726095840454736e-08 -0.10452825927165832" material="default_material" type="mesh" mesh="left_humerus_upper_visuals_mesh_1.obj" class="visual" />
+          <geom name="left_humerus_upper_visual_2" pos="-0.0497764 0.0118627 -0.02705 " quat="0.20673808488374643 -0.6762096365136218 0.206738085781182 0.6762094761479236" material="default_material" type="mesh" mesh="left_humerus_upper_visuals_mesh_2.obj" class="visual" />
+          <geom name="left_humerus_upper_visual_3" pos="-0.0497764 0.0118627 -0.02705 " quat="0.3319665400526204 -0.331966431567667 0.6243381494949521 -0.6243383535255065" material="default_material" type="mesh" mesh="left_humerus_upper_visuals_mesh_3.obj" class="visual" />
+          <geom name="left_humerus_upper_visual_4" pos="-0.0705023 0.0258425 -0.02705 " quat="0.2067380659846944 -0.6762096702387436 0.2067381046802314 0.6762094424227922" material="default_material" type="mesh" mesh="left_humerus_upper_visuals_mesh_4.obj" class="visual" />
+          <geom name="left_humerus_upper_visual_5" pos="-0.103498 0.0480984 -0.02705 " quat="0.2067380659846944 -0.6762096702387436 0.2067381046802314 0.6762094424227922" material="default_material" type="mesh" mesh="left_humerus_upper_visuals_mesh_5.obj" class="visual" />
+          <geom name="left_humerus_upper_visual_6" pos="-0.0497764 0.0118627 -0.02705 " quat="0.20673808488374643 -0.6762096365136218 0.206738085781182 0.6762094761479236" material="default_material" type="mesh" mesh="left_humerus_upper_visuals_mesh_6.obj" class="visual" />
+          <geom name="left_humerus_upper_visual_7" pos="-0.0497764 0.0118627 -0.02705 " quat="0.6762095523961862 -0.2067380738932407 -0.6762096126920165 -0.2067379252918429" material="default_material" type="mesh" mesh="left_humerus_upper_visuals_mesh_7.obj" class="visual" />
+          <geom name="left_humerus_upper_visual_8" pos="0. 0. -0." quat="0.994521916809094 -5.2264129635829195e-09 -4.9726095840454736e-08 -0.10452825927165832" material="default_material" type="mesh" mesh="left_humerus_upper_visuals_mesh_8.obj" class="visual" />
+          <geom name="left_humerus_upper_visual_9" pos="0. 0. -0." quat="0.994521916809094 -5.2264129635829195e-09 -4.9726095840454736e-08 -0.10452825927165832" material="default_material" type="mesh" mesh="left_humerus_upper_visuals_mesh_9.obj" class="visual" />
+          <body name="left_humerus_lower" pos="-0.10955 0.0521805 -0.02705 " quat="0.6092638744998073 0.6382242154814469 0.30441720947841416 0.35888374799640865">
+            <joint name="joint_dof_l_shoulder_yaw" type="hinge" ref="0.0" class="motor" range="-2.7052601 1.134464" axis="0. 0. 1." />
+            <inertial pos="-0.0003666 0.0009016 -0.0328147" quat="1.0 0.0 0.0 0.0" mass="0.109223" diaginertia="9.54e-05 0.0001305 8.78e-05" />
+            <geom name="left_humerus_lower_visual_0" pos="0. 0. 0." quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="left_humerus_lower_visuals_mesh_0.obj" class="visual" />
+            <geom name="left_humerus_lower_visual_1" pos="0. 0. 0." quat="7.679489672524422e-08 -0.0 0.0 -0.999999999999997" material="default_material" type="mesh" mesh="left_humerus_lower_visuals_mesh_1.obj" class="visual" />
+            <body name="left_radius" pos="-0.02705 0.01 -0.065 " quat="0.7010574268566492 0.0922960043632442 -0.7010573388441549 -0.09229593425750587">
+              <joint name="joint_dof_l_elbow" type="hinge" ref="0.0" class="motor" range="-0.8901179 1.6580628" axis="0. 0. 1." />
+              <inertial pos="-0.0150002 0.0355852 -0.0260632" quat="1.0 0.0 0.0 0.0" mass="0.7779893" diaginertia="0.0016945 0.0003639 0.0017194" />
+              <geom name="left_radius_collision" pos="-0. -0. -0." quat="0.8660253915835867 4.330126957917937e-08 -2.5000001056624638e-08 -0.5000000211324923" type="mesh" mesh="left_radius_collisions_mesh_8.obj" class="collision" />
+              <geom name="left_radius_visual_0" pos="-0. -0. -0." quat="0.9999999999999988 4.999999999999998e-08 -0.0 0.0" material="default_material" type="mesh" mesh="left_radius_visuals_mesh_0.obj" class="visual" />
+              <geom name="left_radius_visual_1" pos="-0. -0. -0." quat="0.8660253915835867 4.330126957917937e-08 -2.5000001056624638e-08 -0.5000000211324923" material="default_material" type="mesh" mesh="left_radius_visuals_mesh_1.obj" class="visual" />
+              <geom name="left_radius_visual_2" pos="-0.021979 0.0433899 -0.02705 " quat="0.4304593163881833 -0.5609855526946003 0.43045930485407063 0.5609855376630507" material="default_material" type="mesh" mesh="left_radius_visuals_mesh_2.obj" class="visual" />
+              <geom name="left_radius_visual_3" pos="-0.021979 0.0433899 -0.02705 " quat="0.4304593163881833 0.5609855526946003 -0.43045930485407063 0.5609855376630507" material="default_material" type="mesh" mesh="left_radius_visuals_mesh_3.obj" class="visual" />
+              <geom name="left_radius_visual_4" pos="-0.021979 0.0433899 -0.02705 " quat="0.5609855603254981 0.4304593997814536 0.56098551005444 -0.43045924749624986" material="default_material" type="mesh" mesh="left_radius_visuals_mesh_4.obj" class="visual" />
+              <geom name="left_radius_visual_5" pos="-0.0284495 0.067538 -0.02705 " quat="0.09229590983355848 0.0922960475719736 -0.7010573629918908 -0.7010574002358465" material="default_material" type="mesh" mesh="left_radius_visuals_mesh_5.obj" class="visual" />
+              <geom name="left_radius_visual_6" pos="-0.0359812 0.0956465 -0.02705 " quat="0.5609855819562073 0.4304593887726341 0.5609854884237307 -0.43045925850506944" material="default_material" type="mesh" mesh="left_radius_visuals_mesh_6.obj" class="visual" />
+              <geom name="left_radius_visual_7" pos="-0.021979 0.0433899 -0.02705 " quat="0.5609854901196565 -0.4304593704828019 -0.5609854941684181 -0.43045938899200953" material="default_material" type="mesh" mesh="left_radius_visuals_mesh_7.obj" class="visual" />
+              <geom name="left_radius_visual_8" pos="-0. -0. -0." quat="0.8660253915835867 4.330126957917937e-08 -2.5000001056624638e-08 -0.5000000211324923" material="default_material" type="mesh" mesh="left_radius_visuals_mesh_8.obj" class="visual" />
+              <geom name="left_radius_visual_9" pos="-0. -0. -0." quat="0.8660253915835867 4.330126957917937e-08 -2.5000001056624638e-08 -0.5000000211324923" material="default_material" type="mesh" mesh="left_radius_visuals_mesh_9.obj" class="visual" />
+              <body name="left_gripper_lower" pos="-0.0396823 0.1094592 -0.02705 " quat="0.7010573141439729 0.7010574448002881 0.09229596791107682 0.09229602203067742">
+                <joint name="joint_dof_l_wrist" type="hinge" ref="0.0" class="motor" range="-1.5707962 1.5707962" axis="0. 0. 1." />
+                <inertial pos="0.0017305 -0.0059832 -0.0356482" quat="1.0 0.0 0.0 0.0" mass="0.4099009" diaginertia="0.0002768 0.0002508 0.0002637" />
+                <geom name="left_gripper_lower_collision" pos="-0. -0.0333672 -0.0706747" quat="0.6883545410044347 -0.725374403931214 6.88354541004437e-08 7.253744039312164e-08" type="mesh" mesh="left_gripper_lower_collisions_mesh_9.obj" class="collision" />
+                <geom name="left_gripper_lower_visual_0" pos="-0. 0. -0." quat="0.9999999999999938 -4.9999999999999726e-08 9.99999999999997e-08 4.999999999999989e-15" material="default_material" type="mesh" mesh="left_gripper_lower_visuals_mesh_0.obj" class="visual" />
+                <geom name="left_gripper_lower_visual_1" pos="0.0107 -0.0139599 -0.0512142" quat="0.5000001633974401 0.49999994999997904 -0.49999988660255734 -0.49999999999998146" material="default_material" type="mesh" mesh="left_gripper_lower_visuals_mesh_1.obj" class="visual" />
+                <geom name="left_gripper_lower_visual_2" pos="-0.0184 0.0139599 -0.0512142" quat="0.5000001633974401 0.49999994999997904 -0.49999988660255734 -0.49999999999998146" material="default_material" type="mesh" mesh="left_gripper_lower_visuals_mesh_2.obj" class="visual" />
+                <geom name="left_gripper_lower_visual_3" pos="-0.0184 0. -0.032 " quat="0.5000000133974384 -0.5000000999999998 0.4999999866025417 -0.49999989999999983" material="default_material" type="mesh" mesh="left_gripper_lower_visuals_mesh_3.obj" class="visual" />
+                <geom name="left_gripper_lower_visual_4" pos="-0.0199 -0. -0.032 " quat="0.5000000133974384 -0.5000000999999998 0.4999999866025417 -0.49999989999999983" material="default_material" type="mesh" mesh="left_gripper_lower_visuals_mesh_4.obj" class="visual" />
+                <geom name="left_gripper_lower_visual_5" pos="-0.0199 -0. -0.032 " quat="0.5000000133974476 0.5000000000000006 -0.50000003660255 -0.49999994999999803" material="default_material" type="mesh" mesh="left_gripper_lower_visuals_mesh_5.obj" class="visual" />
+                <geom name="left_gripper_lower_visual_6" pos="-0.0219 -0. -0.032 " quat="0.5000000383974483 -0.500000074999993 0.4999999116025454 -0.4999999749999978" material="default_material" type="mesh" mesh="left_gripper_lower_visuals_mesh_6.obj" class="visual" />
+                <geom name="left_gripper_lower_visual_7" pos="-0.0239 0. -0.032 " quat="0.5000000133974384 -0.5000000999999998 0.4999999866025417 -0.49999989999999983" material="default_material" type="mesh" mesh="left_gripper_lower_visuals_mesh_7.obj" class="visual" />
+                <geom name="left_gripper_lower_visual_8" pos="0.0205 0. -0.032 " quat="0.5000001633974401 0.49999994999997904 -0.49999988660255734 -0.49999999999998146" material="default_material" type="mesh" mesh="left_gripper_lower_visuals_mesh_8.obj" class="visual" />
+                <geom name="left_gripper_lower_visual_9" pos="-0. -0.0333672 -0.0706747" quat="0.6883545410044347 -0.725374403931214 6.88354541004437e-08 7.253744039312164e-08" material="default_material" type="mesh" mesh="left_gripper_lower_visuals_mesh_9.obj" class="visual" />
+                <geom name="left_gripper_lower_visual_10" pos="-0.0149082 -0.0347293 -0.092864 " quat="0.045799999676682676 -0.9989506294255016 4.579999967668282e-09 9.989506294255048e-08" material="default_material" type="mesh" mesh="left_gripper_lower_visuals_mesh_10.obj" class="visual" />
+                <body name="left_gripper_upper" pos="0.025 0. -0.032" quat="0.5000001133974377 0.4999998999999878 -0.4999999366025499 -0.5000000499999953">
+                  <joint name="joint_dof_l_gripper" type="hinge" ref="0.0" class="motor" range="-1.0471976 0." axis="0. 0. 1." />
+                  <inertial pos="-0.0178005 -0.0462068 0.0246915" quat="1.0 0.0 0.0 0.0" mass="0.2071514" diaginertia="0.0002307 0.0001534 0.0002495" />
+                  <geom name="left_gripper_upper_collision" pos="-0.0278173 -0.0552397 0.025 " quat="0.7044160989595691 -0.0616283173037738 0.7044159553989304 0.06162849837777873" type="mesh" mesh="left_gripper_upper_collisions_mesh_1.obj" class="collision" />
+                  <geom name="left_gripper_upper_visual_0" pos="0. -0. -0." quat="0.9999999999999888 1.4999999999999944e-07 -0.0 0.0" material="default_material" type="mesh" mesh="left_gripper_upper_visuals_mesh_0.obj" class="visual" />
+                  <geom name="left_gripper_upper_visual_1" pos="-0.0278173 -0.0552397 0.025 " quat="0.7044160989595691 -0.0616283173037738 0.7044159553989304 0.06162849837777873" material="default_material" type="mesh" mesh="left_gripper_upper_visuals_mesh_1.obj" class="visual" />
+                  <geom name="left_gripper_upper_visual_2" pos="-0.0205461 -0.0684639 0.0559893" quat="0.5311338341097458 0.44918873609163285 0.5970197557428322 -0.3996169927381109" material="default_material" type="mesh" mesh="left_gripper_upper_visuals_mesh_2.obj" class="visual" />
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="neck" pos="0. -0. 0.305" quat="1.767948965615855e-07 -0.9999999999999843 0.0 0.0">
+        <joint name="joint_dof_neck_yaw" type="hinge" ref="0.0" class="motor" range="-1.3962633 1.3962633" axis="0. 0. 1." />
+        <inertial pos="0.0004892 -0.0017958 -0.02735 " quat="1.0 0.0 0.0 0.0" mass="0.2942388" diaginertia="0.0001135 0.000124 0.0001178" />
+        <geom name="neck_visual_0" pos="0. 0. 0." quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="neck_visuals_mesh_0.obj" class="visual" />
+        <geom name="neck_visual_1" pos="0. -0.0109 -0.03 " quat="0.707106790659974 -0.707106771713121 0.0 0.0" material="default_material" type="mesh" mesh="neck_visuals_mesh_1.obj" class="visual" />
+        <geom name="neck_visual_2" pos="0.0139599 0.0182 -0.0492141" quat="-8.711916331614328e-08 -5.4302193360829614e-08 0.707106771713119 -0.7071067906599686" material="default_material" type="mesh" mesh="neck_visuals_mesh_2.obj" class="visual" />
+        <geom name="neck_visual_3" pos="0. 0.0212 -0.03 " quat="5.4302204094354737e-08 -8.711915662583527e-08 -0.7071068777791262 -0.7071066845939483" material="default_material" type="mesh" mesh="neck_visuals_mesh_3.obj" class="visual" />
+        <geom name="neck_visual_4" pos="0. 0.0182 -0.03 " quat="-8.711915245570286e-08 -5.4302210784661206e-08 0.7071066302917467 -0.7071069320813089" material="default_material" type="mesh" mesh="neck_visuals_mesh_4.obj" class="visual" />
+        <geom name="neck_visual_5" pos="0. 0.0232 -0.03 " quat="-8.711915245570286e-08 -5.4302210784661206e-08 0.7071066302917467 -0.7071069320813089" material="default_material" type="mesh" mesh="neck_visuals_mesh_5.obj" class="visual" />
+        <geom name="neck_visual_6" pos="0. -0.0217 -0.03 " quat="5.430219296245158e-08 -5.4302191507429967e-08 0.7071067717131189 -0.7071067906599718" material="default_material" type="mesh" mesh="neck_visuals_mesh_6.obj" class="visual" />
+        <geom name="neck_visual_7" pos="0. -0.0217 -0.03 " quat="5.430219296245158e-08 -5.4302191507429967e-08 0.7071067717131189 -0.7071067906599718" material="default_material" type="mesh" mesh="neck_visuals_mesh_7.obj" class="visual" />
+        <body name="head" pos="0. -0.0252 -0.03 " quat="0.707106790659974 -0.707106771713121 0.0 0.0">
+          <joint name="joint_dof_neck_pitch" type="hinge" ref="0.0" class="motor" range="-0.9075711 0.9250244" axis="0. 0. 1." />
+          <inertial pos="0.0298701 0.0338731 0.0314461" quat="1.0 0.0 0.0 0.0" mass="0.7710117" diaginertia="0.0031279 0.0021968 0.001348" />
+          <geom name="head_visual_0" pos="0. -0. -0." quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="head_visuals_mesh_0.obj" class="visual" />
+          <geom name="head_visual_1" pos="0. -0. 0.0538" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="head_visuals_mesh_1.obj" class="visual" />
+          <geom name="head_visual_2" pos="0.0122581 0.03475 0.04235 " quat="0.5000000153151719 0.4999999972386142 0.49999999808227613 -0.4999999893639372" material="default_material" type="mesh" mesh="head_visuals_mesh_2.obj" class="visual" />
+          <geom name="head_visual_3" pos="-0.0336212 0.0238337 -0.0098 " quat="0.4911976798285576 0.5086500296842743 0.4911976657753164 -0.5086500169764167" material="default_material" type="mesh" mesh="head_visuals_mesh_3.obj" class="visual" />
+          <geom name="head_visual_4" pos="0.0426902 0.0500512 -0.0348 " quat="0.5000000153151719 0.4999999972386142 0.49999999808227613 -0.4999999893639372" material="default_material" type="mesh" mesh="head_visuals_mesh_4.obj" class="visual" />
+          <geom name="head_visual_5" pos="0.0031954 0.0520512 0.0252 " quat="0.5000000404907184 -0.4999999718292527 0.5000000229067278 0.4999999647732968" material="default_material" type="mesh" mesh="head_visuals_mesh_5.obj" class="visual" />
+          <geom name="head_visual_6" pos="-0.0088412 0.0587658 0.0877948" quat="0.30877773115920215 0.6907551653261843 0.4468041533512529 -0.4773674296215035" material="default_material" type="mesh" mesh="head_visuals_mesh_6.obj" class="visual" />
+          <geom name="head_visual_7" pos="-0.0253197 0.0586438 0.1002 " quat="0.4956177299539861 0.5043442069762526 0.49561771778756036 -0.5043441924517449" material="default_material" type="mesh" mesh="head_visuals_mesh_7.obj" class="visual" />
+          <geom name="head_visual_8" pos="0.0738837 0.0196248 0.0432 " quat="0.5000000153151719 0.4999999972386142 0.49999999808227613 -0.4999999893639372" material="default_material" type="mesh" mesh="head_visuals_mesh_8.obj" class="visual" />
+        </body>
+      </body>
+      <body name="right_shoulder" pos="0.0004358 -0.0948533 0.2661205" quat="0.027153773655534556 -0.03413673583807762 0.6219222456547077 -0.7818632081140477">
+        <joint name="joint_dof_r_shoulder_pitch" type="hinge" ref="0.0" class="motor" range="-2.5307271 2.5307271" axis="0. 0. 1." />
+        <inertial pos="-0.0002186 0.0080392 0.0284942" quat="1.0 0.0 0.0 0.0" mass="0.1304355" diaginertia="0.0001096 0.0001508 0.0001231" />
+        <geom name="right_shoulder_visual_0" pos="0. 0. 0." quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="right_shoulder_visuals_mesh_0.obj" class="visual" />
+        <geom name="right_shoulder_visual_1" pos="0.0004109 0. 0. " quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="right_shoulder_visuals_mesh_1.obj" class="visual" />
+        <geom name="right_shoulder_visual_2" pos="0.0004109 0. 0. " quat="7.679489672524422e-08 -0.999999999999997 0.0 0.0" material="default_material" type="mesh" mesh="right_shoulder_visuals_mesh_2.obj" class="visual" />
+        <body name="right_humerus_upper" pos="-0.02705 0.018 0.055 " quat="0.3954091494415343 0.5862180626352457 -0.39540911802622974 -0.5862180626352457">
+          <joint name="joint_dof_r_shoulder_roll" type="hinge" ref="0.0" class="motor" range="-2.7052601 0.1745329" axis="0. 0. 1." />
+          <inertial pos="-0.0449682 -0.0169877 -0.0261315" quat="1.0 0.0 0.0 0.0" mass="0.9145362" diaginertia="0.0021422 0.0005161 0.0021952" />
+          <geom name="right_humerus_upper_visual_0" pos="0. 0. -0." quat="0.9999999999999988 0.0 4.999999999999998e-08 -0.0" material="default_material" type="mesh" mesh="right_humerus_upper_visuals_mesh_0.obj" class="visual" />
+          <geom name="right_humerus_upper_visual_1" pos="0. 0. -0." quat="0.994521916809094 -5.2264129635829195e-09 4.9726095840454736e-08 0.10452825927165832" material="default_material" type="mesh" mesh="right_humerus_upper_visuals_mesh_1.obj" class="visual" />
+          <geom name="right_humerus_upper_visual_2" pos="-0.0428391 -0.0071834 -0.02705 " quat="0.20673812402587954 -0.676209626561181 -0.206738046639049 -0.6762094861003642" material="default_material" type="mesh" mesh="right_humerus_upper_visuals_mesh_2.obj" class="visual" />
+          <geom name="right_humerus_upper_visual_3" pos="-0.0497764 -0.0118627 -0.02705 " quat="0.3319664424424133 0.3319665291778794 0.6243382577642859 0.6243382452561882" material="default_material" type="mesh" mesh="right_humerus_upper_visuals_mesh_3.obj" class="visual" />
+          <geom name="right_humerus_upper_visual_4" pos="-0.0705023 -0.0258425 -0.02705 " quat="0.6762096742624955 0.20673809399699894 -0.676209449478091 0.2067380404299962" material="default_material" type="mesh" mesh="right_humerus_upper_visuals_mesh_4.obj" class="visual" />
+          <geom name="right_humerus_upper_visual_5" pos="-0.103498 -0.0480984 -0.02705 " quat="0.6762095468050908 -0.2067381092330537 0.6762095562617052 0.2067380928149026" material="default_material" type="mesh" mesh="right_humerus_upper_visuals_mesh_5.obj" class="visual" />
+          <geom name="right_humerus_upper_visual_6" pos="-0.0497764 -0.0118627 -0.02705 " quat="0.6762096742624955 0.20673809399699894 -0.676209449478091 0.2067380404299962" material="default_material" type="mesh" mesh="right_humerus_upper_visuals_mesh_6.obj" class="visual" />
+          <geom name="right_humerus_upper_visual_7" pos="-0.0497764 -0.0118627 -0.02705 " quat="-0.20673791782761025 -0.6762095156854218 -0.20673811274049686 0.6762096398080178" material="default_material" type="mesh" mesh="right_humerus_upper_visuals_mesh_7.obj" class="visual" />
+          <geom name="right_humerus_upper_visual_8" pos="0. 0. -0." quat="0.994521916809094 -5.2264129635829195e-09 4.9726095840454736e-08 0.10452825927165832" material="default_material" type="mesh" mesh="right_humerus_upper_visuals_mesh_8.obj" class="visual" />
+          <geom name="right_humerus_upper_visual_9" pos="0. 0. -0." quat="0.994521916809094 -5.2264129635829195e-09 4.9726095840454736e-08 0.10452825927165832" material="default_material" type="mesh" mesh="right_humerus_upper_visuals_mesh_9.obj" class="visual" />
+          <body name="right_humerus_lower" pos="-0.10955 -0.0521805 -0.02705 " quat="0.6092638465657568 -0.6382242459661095 0.30441730918920296 -0.358883656628292">
+            <joint name="joint_dof_r_shoulder_yaw" type="hinge" ref="0.0" class="motor" range="-0.959931 2.8797933" axis="0. 0. 1." />
+            <inertial pos="-0.0003585 -0.0008795 -0.0328351" quat="1.0 0.0 0.0 0.0" mass="0.1065669" diaginertia="9.59e-05 0.0001244 8.61e-05" />
+            <geom name="right_humerus_lower_visual_0" pos="0. -0. 0." quat="0.9999999999999988 0.0 4.999999999999998e-08 -0.0" material="default_material" type="mesh" mesh="right_humerus_lower_visuals_mesh_0.obj" class="visual" />
+            <geom name="right_humerus_lower_visual_1" pos="0. -0. 0." quat="7.679489672524413e-08 -4.9999999999999826e-08 -3.839744836262209e-15 -0.9999999999999958" material="default_material" type="mesh" mesh="right_humerus_lower_visuals_mesh_1.obj" class="visual" />
+            <body name="right_radius" pos="-0.02705 -0.01 -0.065 " quat="0.7010574407010235 -0.09229589920463149 -0.7010573342293758 0.09229596931037026">
+              <joint name="joint_dof_r_elbow" type="hinge" ref="0.0" class="motor" range="-1.6580628 0.8901179" axis="0. 0. 1." />
+              <inertial pos="-0.0149787 -0.0355595 -0.0260633" quat="1.0 0.0 0.0 0.0" mass="0.7779886" diaginertia="0.0016748 0.0003746 0.0017283" />
+              <geom name="right_radius_collision" pos="0. -0. -0." quat="0.8660253665835846 2.5000003221688083e-08 -4.330126832917927e-08 0.5000000644337612" type="mesh" mesh="right_radius_collisions_mesh_2.obj" class="collision" />
+              <geom name="right_radius_visual_0" pos="0. -0. -0." quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="right_radius_visuals_mesh_0.obj" class="visual" />
+              <geom name="right_radius_visual_1" pos="0. -0. -0." quat="0.8660253665835846 2.5000003221688083e-08 -4.330126832917927e-08 0.5000000644337612" material="default_material" type="mesh" mesh="right_radius_visuals_mesh_1.obj" class="visual" />
+              <geom name="right_radius_visual_2" pos="0. -0. -0." quat="0.8660253665835846 2.5000003221688083e-08 -4.330126832917927e-08 0.5000000644337612" material="default_material" type="mesh" mesh="right_radius_visuals_mesh_2.obj" class="visual" />
+              <geom name="right_radius_visual_3" pos="0. -0. -0." quat="0.8660253665835846 2.5000003221688083e-08 -4.330126832917927e-08 0.5000000644337612" material="default_material" type="mesh" mesh="right_radius_visuals_mesh_3.obj" class="visual" />
+              <geom name="right_radius_visual_4" pos="-0.0198133 -0.0353071 -0.02705 " quat="0.4304593163881833 0.5609855526946003 0.43045930485407063 -0.5609855376630507" material="default_material" type="mesh" mesh="right_radius_visuals_mesh_4.obj" class="visual" />
+              <geom name="right_radius_visual_5" pos="-0.021979 -0.0433899 -0.02705 " quat="0.7010573584264437 0.701057409747422 -0.09229596329627306 -0.09229595653973775" material="default_material" type="mesh" mesh="right_radius_visuals_mesh_5.obj" class="visual" />
+              <geom name="right_radius_visual_6" pos="-0.021979 -0.0433899 -0.02705 " quat="0.4304593163881833 0.5609855526946003 0.43045930485407063 -0.5609855376630507" material="default_material" type="mesh" mesh="right_radius_visuals_mesh_6.obj" class="visual" />
+              <geom name="right_radius_visual_7" pos="-0.0284495 -0.067538 -0.02705 " quat="0.7010573584264437 0.701057409747422 -0.09229596329627306 -0.09229595653973775" material="default_material" type="mesh" mesh="right_radius_visuals_mesh_7.obj" class="visual" />
+              <geom name="right_radius_visual_8" pos="-0.0374823 -0.1012488 -0.02705 " quat="0.5609855642287129 -0.4304593013566333 0.560985549197163 0.430459289822521" material="default_material" type="mesh" mesh="right_radius_visuals_mesh_8.obj" class="visual" />
+              <geom name="right_radius_visual_9" pos="-0.021979 -0.0433899 -0.02705 " quat="0.09229593565682571 -0.0922960217486984 -0.7010574377124283 0.7010573255153101" material="default_material" type="mesh" mesh="right_radius_visuals_mesh_9.obj" class="visual" />
+              <body name="right_gripper_lower" pos="-0.0396823 -0.1094592 -0.02705 " quat="0.09229604543023744 0.0922959119752978 0.701057416503955 0.7010573467237811">
+                <joint name="joint_dof_r_wrist" type="hinge" ref="0.0" class="motor" range="-1.5707962 1.5707962" axis="0. 0. 1." />
+                <inertial pos="0.0017305 -0.0059832 -0.0356482" quat="1.0 0.0 0.0 0.0" mass="0.4099009" diaginertia="0.0002768 0.0002508 0.0002637" />
+                <geom name="right_gripper_lower_collision" pos="-0. -0.0333673 -0.0706747" quat="0.688354577273154 -0.7253743695134897 -1.8509896120166028e-09 7.068644733933223e-08" type="mesh" mesh="right_gripper_lower_collisions_mesh_9.obj" class="collision" />
+                <geom name="right_gripper_lower_visual_0" pos="0. -0. 0." quat="0.9999999999999976 -2.4999999999999976e-15 4.999999999999992e-08 4.999999999999992e-08" material="default_material" type="mesh" mesh="right_gripper_lower_visuals_mesh_0.obj" class="visual" />
+                <geom name="right_gripper_lower_visual_1" pos="0.0107 -0.0139599 -0.0512141" quat="0.5000001133974484 0.4999999999999872 -0.49999988660255174 -0.4999999999999872" material="default_material" type="mesh" mesh="right_gripper_lower_visuals_mesh_1.obj" class="visual" />
+                <geom name="right_gripper_lower_visual_2" pos="-0.0184 0.0139599 -0.0512141" quat="0.5000001133974484 0.4999999999999872 -0.49999988660255174 -0.4999999999999872" material="default_material" type="mesh" mesh="right_gripper_lower_visuals_mesh_2.obj" class="visual" />
+                <geom name="right_gripper_lower_visual_3" pos="-0.0184 -0. -0.032 " quat="0.500000088397442 -0.500000024999998 0.4999999616025518 -0.4999999249999928" material="default_material" type="mesh" mesh="right_gripper_lower_visuals_mesh_3.obj" class="visual" />
+                <geom name="right_gripper_lower_visual_4" pos="-0.0199 -0. -0.032 " quat="0.500000088397442 -0.500000024999998 0.4999999616025518 -0.4999999249999928" material="default_material" type="mesh" mesh="right_gripper_lower_visuals_mesh_4.obj" class="visual" />
+                <geom name="right_gripper_lower_visual_5" pos="-0.0199 -0. -0.032 " quat="0.4999999633974458 0.5000000499999986 -0.5000000366025492 -0.4999999499999987" material="default_material" type="mesh" mesh="right_gripper_lower_visuals_mesh_5.obj" class="visual" />
+                <geom name="right_gripper_lower_visual_6" pos="-0.0219 -0. -0.032 " quat="0.5000001383974477 -0.4999999749999809 0.49999986160255105 -0.5000000249999809" material="default_material" type="mesh" mesh="right_gripper_lower_visuals_mesh_6.obj" class="visual" />
+                <geom name="right_gripper_lower_visual_7" pos="-0.0239 -0. -0.032 " quat="0.500000088397442 -0.500000024999998 0.4999999616025518 -0.4999999249999928" material="default_material" type="mesh" mesh="right_gripper_lower_visuals_mesh_7.obj" class="visual" />
+                <geom name="right_gripper_lower_visual_8" pos="0.0205 0. -0.032 " quat="0.5000001133974484 0.4999999999999872 -0.49999988660255174 -0.4999999999999872" material="default_material" type="mesh" mesh="right_gripper_lower_visuals_mesh_8.obj" class="visual" />
+                <geom name="right_gripper_lower_visual_9" pos="-0. -0.0333673 -0.0706747" quat="0.688354577273154 -0.7253743695134897 -1.8509896120166028e-09 7.068644733933223e-08" material="default_material" type="mesh" mesh="right_gripper_lower_visuals_mesh_9.obj" class="visual" />
+                <geom name="right_gripper_lower_visual_10" pos="-0.0149082 -0.0347293 -0.092864 " quat="0.045800099571743066 -0.9989506248454993 -4.765752626368772e-08 5.2237536220862285e-08" material="default_material" type="mesh" mesh="right_gripper_lower_visuals_mesh_10.obj" class="visual" />
+                <body name="right_gripper_upper" pos="0.025 0. -0.032" quat="0.5000001133974484 0.4999999999999872 -0.49999988660255174 -0.4999999999999872">
+                  <joint name="joint_dof_r_gripper" type="hinge" ref="0.0" class="motor" range="-1.0471976 0." axis="0. 0. 1." />
+                  <inertial pos="-0.0178005 -0.0462068 0.0246915" quat="1.0 0.0 0.0 0.0" mass="0.2071514" diaginertia="0.0002307 0.0001534 0.0002495" />
+                  <geom name="right_gripper_upper_collision" pos="-0.0278172 -0.0552397 0.025 " quat="0.7044160973849279 -0.06162850267740934 0.7044159384850434 0.06162852432895091" type="mesh" mesh="right_gripper_upper_collisions_mesh_1.obj" class="collision" />
+                  <geom name="right_gripper_upper_visual_0" pos="0. 0. 0." quat="0.9999999999999888 0.0 0.0 1.4999999999999944e-07" material="default_material" type="mesh" mesh="right_gripper_upper_visuals_mesh_0.obj" class="visual" />
+                  <geom name="right_gripper_upper_visual_1" pos="-0.0278172 -0.0552397 0.025 " quat="0.7044160973849279 -0.06162850267740934 0.7044159384850434 0.06162852432895091" material="default_material" type="mesh" mesh="right_gripper_upper_visuals_mesh_1.obj" class="visual" />
+                  <geom name="right_gripper_upper_visual_2" pos="-0.0205461 -0.0684639 0.0559893" quat="0.5311339761694177 0.44918857671310924 0.597019750886896 -0.39961699032932063" material="default_material" type="mesh" mesh="right_gripper_upper_visuals_mesh_2.obj" class="visual" />
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="pelvis" pos="0. 0. 0." quat="7.679489672524422e-08 -0.999999999999997 0.0 0.0">
+        <joint name="joint_dof_waist" type="hinge" ref="0.0" class="motor" range="-1.0471976 1.0471976" axis="0. 0. 1." />
+        <inertial pos="-0.0008976 0.0000101 0.06071 " quat="1.0 0.0 0.0 0.0" mass="1.6626244" diaginertia="0.0027912 0.0025755 0.0024863" />
+        <geom name="pelvis_visual_0" pos="0. 0. 0." quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="pelvis_visuals_mesh_0.obj" class="visual" />
+        <geom name="pelvis_visual_1" pos="0.02 0.0176 0.007 " quat="0.707106790659974 0.707106771713121 0.0 0.0" material="default_material" type="mesh" mesh="pelvis_visuals_mesh_1.obj" class="visual" />
+        <geom name="pelvis_visual_2" pos="0.029 0. 0.0217" quat="0.7071067199492933 -0.7071068424237964 0.0 0.0" material="default_material" type="mesh" mesh="pelvis_visuals_mesh_2.obj" class="visual" />
+        <geom name="pelvis_visual_3" pos="-0. -0.0123 0.0675" quat="0.4999999201619388 -0.5000001529116089 -0.4999999932354923 -0.49999993369092566" material="default_material" type="mesh" mesh="pelvis_visuals_mesh_3.obj" class="visual" />
+        <geom name="pelvis_visual_4" pos="-0. -0.042 0.0675" quat="0.5000000663090564 0.5000000067644876 -0.49999984708837486 0.5000000798380471" material="default_material" type="mesh" mesh="pelvis_visuals_mesh_4.obj" class="visual" />
+        <geom name="pelvis_visual_5" pos="-0. -0.0123 0.0675" quat="-8.711917146147129e-08 5.4302180292954534e-08 -0.7071068777791295 -0.707106684593945" material="default_material" type="mesh" mesh="pelvis_visuals_mesh_5.obj" class="visual" />
+        <geom name="pelvis_visual_6" pos="-0. 0.0123 0.0675" quat="0.5000001118828246 0.4999999683012716 -0.4999999515146153 0.49999996830127164" material="default_material" type="mesh" mesh="pelvis_visuals_mesh_6.obj" class="visual" />
+        <geom name="pelvis_visual_7" pos="-0. 0.042 0.0675" quat="-8.711917146147129e-08 5.4302180292954534e-08 0.7071068777791295 0.707106684593945" material="default_material" type="mesh" mesh="pelvis_visuals_mesh_7.obj" class="visual" />
+        <body name="left_hip" pos="-0. -0.045 0.0675" quat="0.5000000663090564 0.5000000067644876 -0.49999984708837486 0.5000000798380471">
+          <joint name="joint_dof_l_hip_pitch" type="hinge" ref="0.0" class="motor" range="-2.6179936 1.5707962" axis="0. 0. 1." />
+          <inertial pos="0. -0.0187376 0.0289007" quat="1.0 0.0 0.0 0.0" mass="0.1824669" diaginertia="0.0001051 0.0001826 0.0001759" />
+          <geom name="left_hip_visual" pos="-0. 0. 0." quat="1.0 0.0 -0.0 0.0" material="default_material" type="mesh" mesh="left_hip_visuals.obj" class="visual" />
+          <body name="left_femur_upper" pos="-0. -0.025 0.069" quat="5.430219296245158e-08 -5.4302191507429967e-08 0.7071067717131189 -0.7071067906599718">
+            <joint name="joint_dof_l_hip_roll" type="hinge" ref="0.0" class="motor" range="-0.2617994 1.5707962" axis="0. 0. 1." />
+            <inertial pos="-0.0495489 -0.0002482 -0.0250827" quat="1.0 0.0 0.0 0.0" mass="1.5005854" diaginertia="0.0014659 0.0061365 0.0058611" />
+            <geom name="left_femur_upper_collision" pos="-0. 0. -0.009" quat="1.0 0.0 0.0 -0.0" type="mesh" mesh="left_femur_upper_collisions_mesh_4.obj" class="collision" />
+            <geom name="left_femur_upper_visual_0" pos="-0. 0. 0." quat="1.0 0.0 0.0 -0.0" material="default_material" type="mesh" mesh="left_femur_upper_visuals_mesh_0.obj" class="visual" />
+            <geom name="left_femur_upper_visual_1" pos="-0. 0. -0.009" quat="0.707106790659974 0.0 0.0 -0.707106771713121" material="default_material" type="mesh" mesh="left_femur_upper_visuals_mesh_1.obj" class="visual" />
+            <geom name="left_femur_upper_visual_2" pos="-0.145 -0. -0.021" quat="0.7071068480273859 4.4292125273015515e-08 -0.7071067143456999 -4.429212524525994e-08" material="default_material" type="mesh" mesh="left_femur_upper_visuals_mesh_2.obj" class="visual" />
+            <geom name="left_femur_upper_visual_3" pos="-0.145 -0. -0.021" quat="0.7071068480273859 4.4292125273015515e-08 -0.7071067143456999 -4.429212524525994e-08" material="default_material" type="mesh" mesh="left_femur_upper_visuals_mesh_3.obj" class="visual" />
+            <geom name="left_femur_upper_visual_4" pos="-0. 0. -0.009" quat="1.0 0.0 0.0 -0.0" material="default_material" type="mesh" mesh="left_femur_upper_visuals_mesh_4.obj" class="visual" />
+            <geom name="left_femur_upper_visual_5" pos="-0. 0. -0.009" quat="0.707106790659974 0.0 0.0 -0.707106771713121" material="default_material" type="mesh" mesh="left_femur_upper_visuals_mesh_5.obj" class="visual" />
+            <body name="left_femur_lower" pos="-0.15 -0. -0.021" quat="-1.6408486144831397e-08 -0.7071067906599738 -1.6408485705167716e-08 0.7071067717131209">
+              <joint name="joint_dof_l_thigh" type="hinge" ref="0.0" class="motor" range="-2.6179936 1.5707962" axis="0. 0. 1." />
+              <inertial pos="0.0081732 -0.0128812 0.0524965" quat="1.0 0.0 0.0 0.0" mass="0.2734313" diaginertia="0.0005084 0.0004956 0.000429" />
+              <geom name="left_femur_lower_visual_0" pos="0. 0. 0." quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="left_femur_lower_visuals_mesh_0.obj" class="visual" />
+              <geom name="left_femur_lower_visual_1" pos="0. 0. 0." quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="left_femur_lower_visuals_mesh_1.obj" class="visual" />
+              <body name="left_tibia" pos="0.03 -0.011 0.09 " quat="0.707106790659974 0.707106771713121 0.0 0.0">
+                <joint name="joint_dof_l_knee" type="hinge" ref="0.0" class="motor" range="-2.6179936 0.1745329" axis="0. 0. 1." />
+                <inertial pos="0.0002236 0.1132651 -0.0181919" quat="1.0 0.0 0.0 0.0" mass="1.7307785" diaginertia="0.0016898 0.0199925 0.0205278" />
+                <geom name="left_tibia_collision" pos="0. 0. -0.0327" quat="7.679489672524422e-08 -0.999999999999997 0.0 0.0" type="mesh" mesh="left_tibia_collisions_mesh_4.obj" class="collision" />
+                <geom name="left_tibia_visual_0" pos="0. 0. 0." quat="1.0 -0.0 0.0 0.0" material="default_material" type="mesh" mesh="left_tibia_visuals_mesh_0.obj" class="visual" />
+                <geom name="left_tibia_visual_1" pos="0. 0. -0.003" quat="1.0 -0.0 0.0 0.0" material="default_material" type="mesh" mesh="left_tibia_visuals_mesh_1.obj" class="visual" />
+                <geom name="left_tibia_visual_2" pos="0. 0. -0.0327" quat="7.679489672524422e-08 -0.999999999999997 0.0 0.0" material="default_material" type="mesh" mesh="left_tibia_visuals_mesh_2.obj" class="visual" />
+                <geom name="left_tibia_visual_3" pos="0. 0.225 -0.002" quat="1.0 -0.0 0.0 0.0" material="default_material" type="mesh" mesh="left_tibia_visuals_mesh_3.obj" class="visual" />
+                <geom name="left_tibia_visual_4" pos="0. 0. -0.0327" quat="7.679489672524422e-08 -0.999999999999997 0.0 0.0" material="default_material" type="mesh" mesh="left_tibia_visuals_mesh_4.obj" class="visual" />
+                <body name="left_foot" pos="0. 0.225 0.001" quat="7.679489672524336e-08 -1.151923450878659e-14 1.49999999999999e-07 -0.9999999999999858">
+                  <joint name="joint_dof_l_ankle" type="hinge" ref="0.0" class="motor" range="-1.5707962 1.5707962" axis="0. 0. 1." />
+                  <inertial pos="0.0186991 -0.058262 -0.00597 " quat="1.0 0.0 0.0 0.0" mass="0.3716068" diaginertia="0.0007259 0.0005977 0.0006207" />
+                  <geom name="left_foot_collision" pos="-0.039 -0.072 -0.012" quat="0.5000000291309381 -0.500000018597406 0.5000000842664974 0.4999998680051329" type="mesh" mesh="left_foot_collisions_mesh_3.obj" class="collision" />
+                  <geom name="left_foot_visual_0" pos="0. -0. -0." quat="0.9999999999999888 -1.4999999999999944e-07 0.0 0.0" material="default_material" type="mesh" mesh="left_foot_visuals_mesh_0.obj" class="visual" />
+                  <geom name="left_foot_visual_1" pos="0.057 -0.066 -0.012" quat="0.5000000291309381 -0.500000018597406 0.5000000842664974 0.4999998680051329" material="default_material" type="mesh" mesh="left_foot_visuals_mesh_1.obj" class="visual" />
+                  <geom name="left_foot_visual_2" pos="-0.039 -0.069 -0.012" quat="0.5000000291309381 -0.500000018597406 0.5000000842664974 0.4999998680051329" material="default_material" type="mesh" mesh="left_foot_visuals_mesh_2.obj" class="visual" />
+                  <geom name="left_foot_visual_3" pos="-0.039 -0.072 -0.012" quat="0.5000000291309381 -0.500000018597406 0.5000000842664974 0.4999998680051329" material="default_material" type="mesh" mesh="left_foot_visuals_mesh_3.obj" class="visual" />
+                <body name="left_toe" pos="0.11 -0.085 -0.01" quat="0.707106790659974 -0.707106771713121 0.0 0.0"><inertial pos="0.0 0.0 0.0" quat="1.0 0.0 0.0 0.0" mass="0.0" diaginertia="0.0 0.0 0.0" /><geom name="left_toe_collision" pos="0 0 0" quat="1 0 0 0" type="box" size="0.005 0.005 0.005" class="collision" /></body></body>
+              </body>
+            </body>
+          </body>
+        </body>
+        <body name="right_hip" pos="-0. 0.045 0.0675" quat="-8.711917146147129e-08 5.4302180292954534e-08 0.7071068777791295 0.707106684593945">
+          <joint name="joint_dof_r_hip_pitch" type="hinge" ref="0.0" class="motor" range="-1.5707962 2.6179936" axis="0. 0. 1." />
+          <inertial pos="-0.0187388 0. 0.0288834" quat="1.0 0.0 0.0 0.0" mass="0.1825002" diaginertia="0.0001758 0.0001825 0.0001051" />
+          <geom name="right_hip_visual" pos="0. 0. -0." quat="1.0 -0.0 0.0 0.0" material="default_material" type="mesh" mesh="right_hip_visuals.obj" class="visual" />
+          <body name="right_femur_upper" pos="-0.025 0. 0.069" quat="0.5000000133974483 -0.49999999999999983 -0.4999999866025518 0.49999999999999983">
+            <joint name="joint_dof_r_hip_roll" type="hinge" ref="0.0" class="motor" range="-1.5707962 0.2617994" axis="0. 0. 1." />
+            <inertial pos="0.0495475 -0.0002484 -0.0250827" quat="1.0 0.0 0.0 0.0" mass="1.5005859" diaginertia="0.0017074 0.0057616 0.005995" />
+            <geom name="right_femur_upper_collision" pos="0. 0. -0.009" quat="0.7071068613706477 0.0 -0.0 -0.7071067010024383" type="mesh" mesh="right_femur_upper_collisions_mesh_1.obj" class="collision" />
+            <geom name="right_femur_upper_visual_0" pos="0. 0. 0." quat="1.0 0.0 -0.0 0.0" material="default_material" type="mesh" mesh="right_femur_upper_visuals_mesh_0.obj" class="visual" />
+            <geom name="right_femur_upper_visual_1" pos="0. 0. -0.009" quat="0.7071068613706477 0.0 -0.0 -0.7071067010024383" material="default_material" type="mesh" mesh="right_femur_upper_visuals_mesh_1.obj" class="visual" />
+            <geom name="right_femur_upper_visual_2" pos="0. 0. -0.009" quat="0.7071066845939503 -0.0 0.0 0.7071068777791315" material="default_material" type="mesh" mesh="right_femur_upper_visuals_mesh_2.obj" class="visual" />
+            <geom name="right_femur_upper_visual_3" pos="0. 0. -0.009" quat="0.707106790659974 -0.0 0.0 0.707106771713121" material="default_material" type="mesh" mesh="right_femur_upper_visuals_mesh_3.obj" class="visual" />
+            <geom name="right_femur_upper_visual_4" pos="0.145 -0. -0.021" quat="2.7410716751941067e-08 0.707106776931101 -1.0482989420967925e-08 0.7071067854419933" material="default_material" type="mesh" mesh="right_femur_upper_visuals_mesh_4.obj" class="visual" />
+            <geom name="right_femur_upper_visual_5" pos="0.145 -0. -0.021" quat="2.7410716751941067e-08 0.707106776931101 -1.0482989420967925e-08 0.7071067854419933" material="default_material" type="mesh" mesh="right_femur_upper_visuals_mesh_5.obj" class="visual" />
+            <body name="right_femur_lower" pos="0.15 -0. -0.021" quat="0.7071067906599731 3.5355339532998685e-08 0.7071067717131201 -3.535533858565603e-08">
+              <joint name="joint_dof_r_thigh" type="hinge" ref="0.0" class="motor" range="-1.5707962 2.6179936" axis="0. 0. 1." />
+              <inertial pos="0.0081757 0.0128823 0.052498 " quat="1.0 0.0 0.0 0.0" mass="0.2734299" diaginertia="0.0005162 0.0004878 0.0004289" />
+              <geom name="right_femur_lower_visual_0" pos="0. -0. -0." quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="right_femur_lower_visuals_mesh_0.obj" class="visual" />
+              <geom name="right_femur_lower_visual_1" pos="0. -0. -0." quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="right_femur_lower_visuals_mesh_1.obj" class="visual" />
+              <body name="right_tibia" pos="0.03 0.011 0.09 " quat="0.707106790659974 -0.707106771713121 0.0 0.0">
+                <joint name="joint_dof_r_knee" type="hinge" ref="0.0" class="motor" range="-0.1745329 2.6179936" axis="0. 0. 1." />
+                <inertial pos="0.0002234 -0.1132653 -0.0181919" quat="1.0 0.0 0.0 0.0" mass="1.7307752" diaginertia="0.0016867 0.0199924 0.0205309" />
+                <geom name="right_tibia_collision" pos="-0. 0. -0.0327" quat="7.679489672524422e-08 -0.999999999999997 0.0 0.0" type="mesh" mesh="right_tibia_collisions_mesh_4.obj" class="collision" />
+                <geom name="right_tibia_visual_0" pos="-0. 0. 0." quat="0.9999999999999988 -4.999999999999998e-08 0.0 0.0" material="default_material" type="mesh" mesh="right_tibia_visuals_mesh_0.obj" class="visual" />
+                <geom name="right_tibia_visual_1" pos="-0. 0. -0.003" quat="0.9999999999999988 -4.999999999999998e-08 0.0 0.0" material="default_material" type="mesh" mesh="right_tibia_visuals_mesh_1.obj" class="visual" />
+                <geom name="right_tibia_visual_2" pos="-0. 0. -0.0327" quat="7.679489672524422e-08 -0.999999999999997 0.0 0.0" material="default_material" type="mesh" mesh="right_tibia_visuals_mesh_2.obj" class="visual" />
+                <geom name="right_tibia_visual_3" pos="-0. -0.225 -0.002" quat="0.9999999999999988 -4.999999999999998e-08 0.0 0.0" material="default_material" type="mesh" mesh="right_tibia_visuals_mesh_3.obj" class="visual" />
+                <geom name="right_tibia_visual_4" pos="-0. 0. -0.0327" quat="7.679489672524422e-08 -0.999999999999997 0.0 0.0" material="default_material" type="mesh" mesh="right_tibia_visuals_mesh_4.obj" class="visual" />
+                <body name="right_foot" pos="-0. -0.225 0.001" quat="7.679489672524384e-08 -7.679489672524409e-15 9.999999999999952e-08 -0.999999999999992">
+                  <joint name="joint_dof_r_ankle" type="hinge" ref="0.0" class="motor" range="-1.5707962 1.5707962" axis="0. 0. 1." />
+                  <inertial pos="0.0186991 0.058262 -0.00597 " quat="1.0 0.0 0.0 0.0" mass="0.3716065" diaginertia="0.0007716 0.00055 0.0006226" />
+                  <geom name="right_foot_collision" pos="-0.039 0.072 -0.012" quat="0.5000000148230036 0.49999999817384105 -0.49999999857444455 0.4999999884287106" type="mesh" mesh="right_foot_collisions_mesh_3.obj" class="collision" />
+                  <geom name="right_foot_visual_0" pos="-0. 0. 0." quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="right_foot_visuals_mesh_0.obj" class="visual" />
+                  <geom name="right_foot_visual_1" pos="0.057 0.066 -0.012" quat="0.5000000148230036 0.49999999817384105 -0.49999999857444455 0.4999999884287106" material="default_material" type="mesh" mesh="right_foot_visuals_mesh_1.obj" class="visual" />
+                  <geom name="right_foot_visual_2" pos="-0.039 0.069 -0.012" quat="0.5000000148230036 0.49999999817384105 -0.49999999857444455 0.4999999884287106" material="default_material" type="mesh" mesh="right_foot_visuals_mesh_2.obj" class="visual" />
+                  <geom name="right_foot_visual_3" pos="-0.039 0.072 -0.012" quat="0.5000000148230036 0.49999999817384105 -0.49999999857444455 0.4999999884287106" material="default_material" type="mesh" mesh="right_foot_visuals_mesh_3.obj" class="visual" />
+                <body name="right_toe" pos="0.11 0.085 -0.01" quat="0.707106790659974 0.707106771713121 0.0 0.0"><inertial pos="0.0 0.0 0.0" quat="1.0 0.0 0.0 0.0" mass="0.0" diaginertia="0.0 0.0 0.0" /><geom name="right_toe_collision" pos="0 0 0" quat="1 0 0 0" type="box" size="0.005 0.005 0.005" class="collision" /></body></body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <site name="alpha_v1_sim_assembly_site" pos="0 0 0" quat="1 0 0 0" />
+      <camera name="front_camera" mode="track" fovy="90.0" quat="4.329780281177467e-17 4.329780281177466e-17 0.7071067811865475 0.7071067811865476" pos="0.0 2.0 0.5" />
+      <camera name="side_camera" mode="track" fovy="90.0" quat="-0.5 -0.4999999999999999 0.5 0.5000000000000001" pos="-2.0 0.0 0.5" />
+    </body>
+  </worldbody>
+
+  <actuator>
+    <motor name="joint_dof_l_shoulder_pitch_ctrl" joint="joint_dof_l_shoulder_pitch" class="motor" />
+    <motor name="joint_dof_l_shoulder_roll_ctrl" joint="joint_dof_l_shoulder_roll" class="motor" />
+    <motor name="joint_dof_l_shoulder_yaw_ctrl" joint="joint_dof_l_shoulder_yaw" class="motor" />
+    <motor name="joint_dof_l_elbow_ctrl" joint="joint_dof_l_elbow" class="motor" />
+    <motor name="joint_dof_l_wrist_ctrl" joint="joint_dof_l_wrist" class="motor" />
+    <motor name="joint_dof_l_gripper_ctrl" joint="joint_dof_l_gripper" class="motor" />
+    <motor name="joint_dof_neck_yaw_ctrl" joint="joint_dof_neck_yaw" class="motor" />
+    <motor name="joint_dof_neck_pitch_ctrl" joint="joint_dof_neck_pitch" class="motor" />
+    <motor name="joint_dof_r_shoulder_pitch_ctrl" joint="joint_dof_r_shoulder_pitch" class="motor" />
+    <motor name="joint_dof_r_shoulder_roll_ctrl" joint="joint_dof_r_shoulder_roll" class="motor" />
+    <motor name="joint_dof_r_shoulder_yaw_ctrl" joint="joint_dof_r_shoulder_yaw" class="motor" />
+    <motor name="joint_dof_r_elbow_ctrl" joint="joint_dof_r_elbow" class="motor" />
+    <motor name="joint_dof_r_wrist_ctrl" joint="joint_dof_r_wrist" class="motor" />
+    <motor name="joint_dof_r_gripper_ctrl" joint="joint_dof_r_gripper" class="motor" />
+    <motor name="joint_dof_waist_ctrl" joint="joint_dof_waist" class="motor" />
+    <motor name="joint_dof_l_hip_pitch_ctrl" joint="joint_dof_l_hip_pitch" class="motor" />
+    <motor name="joint_dof_l_hip_roll_ctrl" joint="joint_dof_l_hip_roll" class="motor" />
+    <motor name="joint_dof_l_thigh_ctrl" joint="joint_dof_l_thigh" class="motor" />
+    <motor name="joint_dof_l_knee_ctrl" joint="joint_dof_l_knee" class="motor" />
+    <motor name="joint_dof_l_ankle_ctrl" joint="joint_dof_l_ankle" class="motor" />
+    <motor name="joint_dof_r_hip_pitch_ctrl" joint="joint_dof_r_hip_pitch" class="motor" />
+    <motor name="joint_dof_r_hip_roll_ctrl" joint="joint_dof_r_hip_roll" class="motor" />
+    <motor name="joint_dof_r_thigh_ctrl" joint="joint_dof_r_thigh" class="motor" />
+    <motor name="joint_dof_r_knee_ctrl" joint="joint_dof_r_knee" class="motor" />
+    <motor name="joint_dof_r_ankle_ctrl" joint="joint_dof_r_ankle" class="motor" />
+  </actuator>
+
+  <contact>
+    <exclude body1="left_tibia" body2="left_foot" />
+    <exclude body1="left_gripper_lower" body2="left_gripper_upper" />
+    <exclude body1="left_radius" body2="left_gripper_lower" />
+    <exclude body1="right_tibia" body2="right_foot" />
+    <exclude body1="right_gripper_lower" body2="right_gripper_upper" />
+    <exclude body1="right_radius" body2="right_gripper_lower" />
+  <exclude body1="left_foot" body2="left_toe" /><exclude body1="right_foot" body2="right_toe" /></contact>
+
+  <sensor>
+    <framepos name="alpha_v1_sim_assembly_site_pos" objtype="site" objname="alpha_v1_sim_assembly_site" />
+    <framequat name="alpha_v1_sim_assembly_site_quat" objtype="site" objname="alpha_v1_sim_assembly_site" />
+    <framelinvel name="alpha_v1_sim_assembly_site_linvel" objtype="site" objname="alpha_v1_sim_assembly_site" />
+    <frameangvel name="alpha_v1_sim_assembly_site_angvel" objtype="site" objname="alpha_v1_sim_assembly_site" />
+    <velocimeter name="alpha_v1_sim_assembly_site_vel" site="alpha_v1_sim_assembly_site" />
+  </sensor>
+
+  <!-- setup scene -->
+  <statistic center="1.0 0.7 1.0" extent="0.8"/>
+  <visual>
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.1 0.1 0.1" specular="0.9 0.9 0.9"/>
+    <rgba haze="0.15 0.25 0.35 1"/>
+    <global azimuth="-140" elevation="-20" offwidth="2080" offheight="1170"/>
+  </visual>
+  <asset>
+     <texture type="skybox" builtin="gradient" rgb1="1 1 1" rgb2="1 1 1" width="800" height="800"/>
+    <texture type="2d" name="groundplane" builtin="checker" mark="edge" rgb1="1 1 1" rgb2="1 1 1" markrgb="0 0 0"
+      width="300" height="300"/>
+    <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5" reflectance="0"/>
+    <texture type="skybox" builtin="gradient" rgb1=".4 .5 .6" rgb2="0 0 0" width="100" height="100"/>
+    <texture builtin="flat" height="1278" mark="cross" markrgb="1 1 1" name="texgeom" random="0.01" rgb1="0.8 0.6 0.4" rgb2="0.8 0.6 0.4" type="cube" width="127"/>
+    <texture name="texplane" builtin="checker" height="512" width="512" rgb1=".2 .3 .4" rgb2=".1 .15 .2" type="2d" />
+    <material name="MatPlane" reflectance="0.5" shininess="0.01" specular="0.1" texrepeat="1 1" texture="texplane" texuniform="true" />
+    <material name="geom" texture="texgeom" texuniform="true"/>
+  </asset>
+   <worldbody>
+    <geom name="floor" size="0 0 0.01" type="plane" material="groundplane" contype="1" conaffinity="0" priority="1"
+      friction="0.6" condim="3"/>
+
+        <light diffuse=".5 .5 .5" pos="-3 -3 5" dir="3 3 -5" castshadow="true"/>
+
+  </worldbody>
+</mujoco>
